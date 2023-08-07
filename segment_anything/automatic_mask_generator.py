@@ -279,7 +279,7 @@ class SamAutomaticMaskGenerator:
         masks, iou_preds, _ = self.predictor.predict_torch(
             in_points[:, None, :],
             in_labels[:, None],
-            multimask_output=True,
+            multimask_output=False,
             return_logits=True,
         )
 
